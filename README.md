@@ -9,6 +9,7 @@
 #### [Libraries](http://nuget.org/packages/toastr)
 ```
 JavaScript
+NoSQL as the database environment
 firebase Authentication
 Google Fonts
 Bootstrap 
