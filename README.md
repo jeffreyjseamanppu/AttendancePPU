@@ -8,6 +8,7 @@
 
 #### [Libraries](http://nuget.org/packages/toastr)
 ```
+JavaScript
 firebase Authentication
 Google Fonts
 Bootstrap 
