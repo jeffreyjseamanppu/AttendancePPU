@@ -7,6 +7,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     var user = firebase.auth().currentUser;
 
+    // Conditional statement
     if(user != null){
 
       var email_id = user.email;
@@ -30,7 +31,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       //console.log(dateTime); //date
 
 
-      //Call the GPS Location Script
+      // Call the GPS Location Script. This is the prompt to use the location
       getLocation();
 
       //Set the Session Variables
@@ -56,6 +57,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
+// Login feature that uses firebase authentication to pass parameters to validate
 function login(){
 
   var userEmail = document.getElementById("email_field").value;
@@ -73,10 +75,12 @@ function login(){
 
 }
 
+// Function to use firebase sign out
 function logout(){
   firebase.auth().signOut();
 }
 
+// Function to log the data in the NoSQL database environment in Firebase
 function storeData(){
   console.log(sessionStorage.getItem('dayoftheweek'))
 
@@ -96,6 +100,7 @@ function storeData(){
   //window.alert("You're CheckedIn ");
 }
 
+// Function for capturing the location of the user
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
