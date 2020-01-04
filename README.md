@@ -32,7 +32,7 @@ This is a Toast Message - Error Alert Second Message
 ![Login](https://github.com/jeffreyjseamanppu/AttendancePPUWeb/blob/master/img/img_error2.png)
 
 ## Web Application 
-http://jseaman.it.pointpark.edu/attendance/
+https://jseaman.it.pointpark.edu/attendance/
 
 ## Author
 Copyright (c) Jeffrey J. Seaman - jseaman@pointpark.edu. All rights reserved.
