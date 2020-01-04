@@ -1,6 +1,8 @@
 <html>
 <head>
   <title>PPU Attendance</title>
+  
+  <!-- Libraries that are being used -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,6 +12,8 @@
 
 </head>
 <body>
+  
+  <!-- JavaScript Libraries -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
@@ -18,6 +22,7 @@
    src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">
   </script>
 
+  <!-- Start of the login section -->
   <div id="login_div" class="main-div">
       <center>
         <img src="ppu.jpg" alt="ppu login" height="150" width="250">
@@ -26,9 +31,11 @@
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
 
+    <!-- Login will call the login function in the index.js -->
     <button onclick="login()">Login to Account</button>
   </div>
-
+    
+  <!-- This section will make a call to the storeData function in the index.js -->
   <div id="user_div" class="loggedin-div">
     <h3>Welcome</h3>
     <p id="user_para">Welcome to PPU Attendance. You're currently logged in.</p>
@@ -45,6 +52,7 @@
   </script>
 
 
+  <!-- API Call to use Firebase -->
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script>
